@@ -1,0 +1,25 @@
+###########################
+# UaModeler Project File  #
+# Generated at 20.04.2015 #
+###########################
+
+PROJECTNAME = SA-CH Types
+
+TEMPLATESET = ($TEMPLATES)/cpp/v1_4/t0/cpp_server.tt2set
+
+MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
+    sa-ch_types_base.ua \
+    sa-ch_types_nt.ua \
+    sa-ch_types_ne.ua
+
+VARIABLES+= sa-ch_types_base.ua: DllExportPrefix=SA-CH_TYPES_BASE; NamespaceName=SaChTypesBase; NamespacePrefix=SaChTypesBase; \
+    sa-ch_types_nt.ua: DllExportPrefix=SA-CH_TYPES_NT; NamespaceName=SaChTypesNt; NamespacePrefix=SaChTypesNt; \
+    sa-ch_types_ne.ua: DllExportPrefix=SA-CH_TYPES_NE; NamespaceName=SaChTypesNe; NamespacePrefix=SaChTypesNe; 
+
+COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
+    sa-ch_types_base.ua: #800080\
+    sa-ch_types_nt.ua: #008000\
+    sa-ch_types_ne.ua: #8a2be2
+
+OUTPUTPATH = 
+
