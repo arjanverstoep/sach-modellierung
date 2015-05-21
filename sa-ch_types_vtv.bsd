@@ -1,0 +1,12 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://astra.admin.ch/SA-CH/Types/VTV" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns0="http://opcfoundation.org/UA/" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.bsd" TargetNamespace="http://astra.admin.ch/SA-CH/Types/VTV">
+    <opc:Import Namespace="http://opcfoundation.org/UA/2008/02/Types.bsd"/>
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:EnumeratedType LengthInBits="32" Name="CameraTypeStates">
+        <opc:EnumeratedValue Name="Static camera" Value="0"/>
+        <opc:EnumeratedValue Name="Moveable camera" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="RecordingStates">
+        <opc:EnumeratedValue Name="Not Recording" Value="0"/>
+        <opc:EnumeratedValue Name="Recording" Value="1"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
