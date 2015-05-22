@@ -11,10 +11,8 @@
         <Alias Alias="ByteString">i=15</Alias>
         <Alias Alias="NodeId">i=17</Alias>
         <Alias Alias="LocalizedText">i=21</Alias>
-        <Alias Alias="HasEventSource">i=36</Alias>
         <Alias Alias="HasModellingRule">i=37</Alias>
         <Alias Alias="HasTypeDefinition">i=40</Alias>
-        <Alias Alias="GeneratesEvent">i=41</Alias>
         <Alias Alias="HasSubtype">i=45</Alias>
         <Alias Alias="HasProperty">i=46</Alias>
         <Alias Alias="HasComponent">i=47</Alias>
@@ -24,7 +22,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="/7IIWPaYlSNGDabA+zu24w==" Version="1.3.1"/>
+            <ModelInfo Tool="UaModeler" Hash="qlqQGwngS1GhMw/f8xzCZQ==" Version="1.3.1"/>
         </Extension>
     </Extensions>
     <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:TrafficSignFailureEventType">
@@ -37,14 +35,12 @@
         <DisplayName>VlFailureEventType</DisplayName>
         <References>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2131</Reference>
-            <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1005</Reference>
         </References>
     </UAObjectType>
     <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:OffNormalEventType">
         <DisplayName>OffNormalEventType</DisplayName>
         <References>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2130</Reference>
-            <Reference ReferenceType="GeneratesEvent" IsForward="false">ns=1;i=1005</Reference>
         </References>
     </UAObjectType>
     <UAObject ParentNodeId="ns=2;i=1006" NodeId="ns=1;i=5004" BrowseName="1:E_Sys_F">
@@ -987,10 +983,7 @@
     <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:VlType">
         <DisplayName>VlType</DisplayName>
         <References>
-            <Reference ReferenceType="HasEventSource">ns=2;i=6003</Reference>
-            <Reference ReferenceType="GeneratesEvent">ns=1;i=1007</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5007</Reference>
-            <Reference ReferenceType="GeneratesEvent">ns=1;i=1006</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1008</Reference>
         </References>
     </UAObjectType>

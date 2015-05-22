@@ -1,3 +1,4 @@
+[22-05-2015] AV: Removed events alltogether
 [21-05-2015] AV: Removed DeviceType/GeoRef
                          DeviceType/Configuration/Technological
 			     Added   ControllerType/Status/AccumState
