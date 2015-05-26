@@ -1,0 +1,293 @@
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="http://astra.admin.ch/SA-CH/Types/VTV" xmlns:s2="http://astra.admin.ch/SA-CH/Types/Base" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://astra.admin.ch/SA-CH/Types/VTV</Uri>
+        <Uri>http://astra.admin.ch/SA-CH/Types/Base</Uri>
+    </NamespaceUris>
+    <Aliases>
+        <Alias Alias="Int16">i=4</Alias>
+        <Alias Alias="Double">i=11</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="LocalizedText">i=21</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="RecordingStates">ns=1;i=3001</Alias>
+        <Alias Alias="CameraTypeStates">ns=1;i=3002</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ModelInfo Tool="UaModeler" Hash="VGyGN7ziH0tFljIwvThkBw==" Version="1.3.4"/>
+        </Extension>
+    </Extensions>
+    <UADataType NodeId="ns=1;i=3002" BrowseName="1:CameraTypeStates">
+        <DisplayName>CameraTypeStates</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
+        </References>
+        <Definition Name="1:CameraTypeStates">
+            <Field SymbolicName="StaticCamera" Name="Static camera" Value="0"/>
+            <Field SymbolicName="MoveableCamera" Name="Moveable camera" Value="1"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3002" ValueRank="1" NodeId="ns=1;i=6013" ArrayDimensions="2" BrowseName="EnumStrings">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Static camera</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Moveable camera</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </Value>
+    </UAVariable>
+    <UADataType NodeId="ns=1;i=3001" BrowseName="1:RecordingStates">
+        <DisplayName>RecordingStates</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+        </References>
+        <Definition Name="1:RecordingStates">
+            <Field SymbolicName="NotRecording" Name="Not Recording" Value="0"/>
+            <Field Name="Recording" Value="1"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3001" ValueRank="1" NodeId="ns=1;i=6012" ArrayDimensions="2" BrowseName="EnumStrings">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Not Recording</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>Recording</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </Value>
+    </UAVariable>
+    <UAVariableType DataType="CameraTypeStates" ValueRank="-2" NodeId="ns=1;i=2001" BrowseName="1:CameraTypeType">
+        <DisplayName>CameraTypeType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariableType>
+    <UAVariableType DataType="RecordingStates" ValueRank="-2" NodeId="ns=1;i=2002" BrowseName="1:RecordingType">
+        <DisplayName>RecordingType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariableType>
+    <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:DecoderType">
+        <DisplayName>DecoderType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6014" BrowseName="1:Aks" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Aks</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:AsVtvType">
+        <DisplayName>AsVtvType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1003</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1001" NodeId="ns=1;i=6001" BrowseName="1:Aks" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Aks</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:VideoDetectionSystemType">
+        <DisplayName>VideoDetectionSystemType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=6020" BrowseName="1:Aks" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Aks</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:CameraType">
+        <DisplayName>CameraType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1007</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6002" BrowseName="1:Aks" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Aks</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5002" BrowseName="1:Commands">
+        <DisplayName>Commands</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
+        </References>
+    </UAObject>
+    <UAMethod ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=7001" BrowseName="1:StartRecording">
+        <DisplayName>StartRecording</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
+        </References>
+    </UAMethod>
+    <UAMethod ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=7002" BrowseName="1:StopRecording">
+        <DisplayName>StopRecording</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
+        </References>
+    </UAMethod>
+    <UAObject ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5003" BrowseName="1:Parameter">
+        <DisplayName>Parameter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6011</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6007</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Int16" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6011" BrowseName="1:BacklogHours" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>BacklogHours</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6009" BrowseName="1:Brightness" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Brightness</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6008" BrowseName="1:Contrast" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Contrast</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6010" BrowseName="1:Saturation" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Saturation</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6007" BrowseName="1:Whitebalance" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Whitebalance</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAObject ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5001" BrowseName="1:Status">
+        <DisplayName>Status</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6003</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6005</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6006</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="CameraTypeStates" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6003" BrowseName="1:Cameratype" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Cameratype</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6005" BrowseName="1:IPAddr" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IPAddr</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="RecordingStates" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6004" BrowseName="1:IsRecording" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsRecording</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2002</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="Multicast_Group" DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6006" BrowseName="1:Multicast-Group" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Multicast-Group</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>

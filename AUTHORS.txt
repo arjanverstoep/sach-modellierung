@@ -4,3 +4,4 @@ Author (organization, roles) email
 
 Andy Rohr (Remtec; NT-Server) a.rohr@remtec.ch
 Arjan Verstoep (Sopra Steria; NT-Client, VTV-Client, Traffic-Server) arjan.verstoep@soprasteria.ch
+Jérémy Toutin (Etavis; VTV-Server) jeremy.toutain@etavis.ch
