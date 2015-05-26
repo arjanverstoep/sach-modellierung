@@ -1,2 +1,3 @@
-[20-04-2015] AV: Modellierung Verkehrstypicals WtaType, AmpelType
-[20-04-2015] AV: Modellierung Verkehrstypicals VlType, BzType, WwwType, SpursignalisationType
+* [20-04-2015] AV: Modellierung Verkehrstypicals WtaType, AmpelType
+* [20-04-2015] AV: Modellierung Verkehrstypicals VlType, BzType, WwwType, SpursignalisationType
+* [26-05-2015] AR: Updated to version 0.4 of the modelling spec of AS NT reflecting the changes in version 0.92 of 11601. Translated README to english in order to not to disadvantage non-german readers...
