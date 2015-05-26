@@ -1,3 +1,4 @@
+[26-05-2015] AR: Updates according to NT-spec v0.4
 [22-05-2015] AV: Removed events alltogether
 [21-05-2015] AV: Removed DeviceType/GeoRef
                          DeviceType/Configuration/Technological
