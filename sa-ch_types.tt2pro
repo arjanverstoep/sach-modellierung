@@ -1,11 +1,11 @@
 ###########################
 # UaModeler Project File  #
-# Generated at 05.05.2015 #
+# Generated at 21.05.2015 #
 ###########################
 
 PROJECTNAME = SA-CH Types
 
-TEMPLATESET = ($TEMPLATES)/cpp/v1_4/t0/cpp_server.tt2set
+TEMPLATESET = ($TEMPLATES)/cpp/v1_4/t3/cpp_server.tt2set
 
 MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
     sa-ch_types_base.ua \
