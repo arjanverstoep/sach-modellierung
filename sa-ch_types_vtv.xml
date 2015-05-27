@@ -18,7 +18,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="GycuDCT2ephRscopV5fziw==" Version="1.3.1"/>
+            <ModelInfo Tool="UaModeler" Hash="VGyGN7ziH0tFljIwvThkBw==" Version="1.3.4"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3002" BrowseName="1:CameraTypeStates">
@@ -257,7 +257,7 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
         <Value>
-            <uax:Double>0</uax:Double>
+            <uax:Int32>0</uax:Int32>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6005" BrowseName="1:IPAddr" UserAccessLevel="3" AccessLevel="3">
@@ -279,7 +279,7 @@
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=2002</Reference>
         </References>
         <Value>
-            <uax:Double>0</uax:Double>
+            <uax:Int32>0</uax:Int32>
         </Value>
     </UAVariable>
     <UAVariable SymbolicName="Multicast_Group" DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6006" BrowseName="1:Multicast-Group" UserAccessLevel="3" AccessLevel="3">

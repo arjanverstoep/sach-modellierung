@@ -20,7 +20,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="wxIUmbkpXxHhYfcZsVj5/g==" Version="1.3.1"/>
+            <ModelInfo Tool="UaModeler" Hash="wDaTRkWoKN7qGY0kcuF/wQ==" Version="1.3.4"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3005" BrowseName="1:AccumStateStates">
@@ -29,13 +29,12 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
         </References>
-        <Definition Name="1:AccumStateTypes">
-            <Field Name="Unknown" Value="0"/>
-            <Field Name="Normal" Value="1"/>
-            <Field Name="Failure" Value="2"/>
+        <Definition Name="1:AccumStateStates">
+            <Field Name="Normal" Value="0"/>
+            <Field Name="Failure" Value="1"/>
         </Definition>
     </UADataType>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3005" ValueRank="1" NodeId="ns=1;i=6011" ArrayDimensions="3" BrowseName="EnumStrings">
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3005" ValueRank="1" NodeId="ns=1;i=6011" ArrayDimensions="2" BrowseName="EnumStrings">
         <DisplayName>EnumStrings</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3005</Reference>
@@ -44,9 +43,6 @@
         </References>
         <Value>
             <uax:ListOfLocalizedText>
-                <uax:LocalizedText>
-                    <uax:Text>Unknown</uax:Text>
-                </uax:LocalizedText>
                 <uax:LocalizedText>
                     <uax:Text>Normal</uax:Text>
                 </uax:LocalizedText>

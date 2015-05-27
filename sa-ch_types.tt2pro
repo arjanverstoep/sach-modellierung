@@ -1,34 +1,30 @@
 ###########################
 # UaModeler Project File  #
-# Generated at 22.05.2015 #
+# Generated at 26.05.2015 #
 ###########################
 
 PROJECTNAME = SA-CH Types
 
-TEMPLATESET = ($TEMPLATES)/cpp/v1_4/t0/cpp_server.tt2set
+TEMPLATESET = ($TEMPLATES)/cpp/v1_4/t3/cpp_server.tt2set
 
 MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
     sa-ch_types_base.ua \
-    sa-ch_types_nt.ua \
     sa-ch_types_ne.ua \
+    sa-ch_types_nt.ua \
     sa-ch_types_s.ua \
     sa-ch_types_vtv.ua
 
 VARIABLES+= sa-ch_types_base.ua: DllExportPrefix=SA-CH_TYPES_BASE; NamespaceName=SaChTypesBase; NamespacePrefix=SaChTypesBase; \
-    sa-ch_types_nt.ua: DllExportPrefix=SA-CH_TYPES_NT; NamespaceName=SaChTypesNt; NamespacePrefix=SaChTypesNt; \
     sa-ch_types_ne.ua: DllExportPrefix=SA-CH_TYPES_NE; NamespaceName=SaChTypesNe; NamespacePrefix=SaChTypesNe; \
+    sa-ch_types_nt.ua: DllExportPrefix=SA-CH_TYPES_NT; NamespaceName=SaChTypesNt; NamespacePrefix=SaChTypesNt; \
     sa-ch_types_s.ua: Dll Export Prefix=SA-CH_TYPES_S; DllExportPrefix=; Namespace Name=SaChTypesS; Namespace Prefix=SaChTypesS; NamespaceName=; NamespacePrefix=; \
     sa-ch_types_vtv.ua: Dll Export Prefix=SA-CH_TYPES_VTV; DllExportPrefix=; Namespace Name=SaChTypesVtv; Namespace Prefix=SaChTypesVtv; NamespaceName=; NamespacePrefix=; 
 
 COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
     sa-ch_types_base.ua: #800080\
-    sa-ch_types_nt.ua: #008000\
     sa-ch_types_ne.ua: #8a2be2\
+    sa-ch_types_nt.ua: #008000\
     sa-ch_types_s.ua: #0000ff\
     sa-ch_types_vtv.ua: #0000ff
 
 OUTPUTPATH = 
-
-GENERATE += sa-ch_types_s.ua \
-    sa-ch_types_vtv.ua
-

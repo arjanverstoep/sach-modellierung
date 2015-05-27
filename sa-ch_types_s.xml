@@ -17,7 +17,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="jRgNzph8XwqMQTNr3w6v0w==" Version="1.3.1"/>
+            <ModelInfo Tool="UaModeler" Hash="tBqZ912UtEAcBx8ILLOMxg==" Version="1.3.4"/>
         </Extension>
     </Extensions>
     <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:TrafficSignFailureEventType">
@@ -58,8 +58,8 @@
     <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:AmpelType">
         <DisplayName>AmpelType</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1006</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5012</Reference>
         </References>
     </UAObjectType>
