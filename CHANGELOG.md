@@ -1,3 +1,5 @@
+* [02-06-2015] AV:
+  * SpursignalisationType: Properties instead of Components.
 * [26-05-2015] AR: 
   * Removed value "Unknown" from AccumStateStates 
   * Fixed a problem referencing NE object types in NT

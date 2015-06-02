@@ -17,7 +17,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="tBqZ912UtEAcBx8ILLOMxg==" Version="1.3.4"/>
+            <ModelInfo Tool="UaModeler" Hash="rMJmPY9KJ/ZdWsMNfCzVJQ==" Version="1.3.1"/>
         </Extension>
     </Extensions>
     <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:TrafficSignFailureEventType">
@@ -175,75 +175,60 @@
         <DisplayName>Status</DisplayName>
         <Description Locale="de">Enthält fünf EIN/AUS Datenpunkte</Description>
         <References>
-            <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6066</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6002</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6068</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6004</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6069</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6005</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1008</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6065" BrowseName="1:Blinken" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6001" BrowseName="1:Blinken" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>Blinken</DisplayName>
         <Description Locale="de">Ob ein Blinken gestellt ist</Description>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
-        <Value>
-            <uax:String></uax:String>
-        </Value>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6066" BrowseName="1:BzGestellt" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6002" BrowseName="1:BzGestellt" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>BzGestellt</DisplayName>
         <Description Locale="de">Ob ein Betriebszustand gestellt ist</Description>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
-        <Value>
-            <uax:String></uax:String>
-        </Value>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6067" BrowseName="1:Gegenverkehr" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6003" BrowseName="1:Gegenverkehr" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>Gegenverkehr</DisplayName>
         <Description Locale="de">Ob ein Gegenverkehr BZ gestellt ist</Description>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
-        <Value>
-            <uax:String></uax:String>
-        </Value>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6068" BrowseName="1:Gruen" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6004" BrowseName="1:Gruen" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>Gruen</DisplayName>
         <Description Locale="de">Ob die Spur grün ist</Description>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
-        <Value>
-            <uax:String></uax:String>
-        </Value>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6069" BrowseName="1:Sperren" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6005" BrowseName="1:Sperren" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>Sperren</DisplayName>
         <Description Locale="de">Ob die Spur gesperrt ist</Description>
         <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
         </References>
-        <Value>
-            <uax:String></uax:String>
-        </Value>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:WtaType">
         <DisplayName>WtaType</DisplayName>
