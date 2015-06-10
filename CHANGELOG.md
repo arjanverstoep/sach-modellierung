@@ -1,3 +1,4 @@
+* [10-06-2015] AV: Renamed AmpelType to TrafficLightType, added SystemStates Folder to VlType
 * [02-06-2015] AV:
   * SpursignalisationType: Properties instead of Components.
 * [26-05-2015] AR: 
