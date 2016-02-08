@@ -1,6 +1,6 @@
 ###########################
 # UaModeler Project File  #
-# Generated at 10.06.2015 #
+# Generated at 04.02.2016 #
 ###########################
 
 PROJECTNAME = SA-CH Types
@@ -28,4 +28,6 @@ COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
     sa-ch_types_vtv.ua: #0000ff
 
 OUTPUTPATH = 
+
+GENERATE += sa-ch_types_nt.ua
 

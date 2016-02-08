@@ -1,0 +1,29 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://astra.admin.ch/SA-CH/Types/VTV/Types.xsd" xmlns:tns="http://astra.admin.ch/SA-CH/Types/VTV/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="CameraTypeStates">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="StaticCamera_0"/>
+            <xs:enumeration value="MoveableCamera_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CameraTypeStates" name="CameraTypeStates"/>
+    <xs:complexType name="ListOfCameraTypeStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CameraTypeStates" name="CameraTypeStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCameraTypeStates" name="ListOfCameraTypeStates" nillable="true"/>
+    <xs:simpleType name="RecordingStates">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NotRecording_0"/>
+            <xs:enumeration value="Recording_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:RecordingStates" name="RecordingStates"/>
+    <xs:complexType name="ListOfRecordingStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RecordingStates" name="RecordingStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRecordingStates" name="ListOfRecordingStates" nillable="true"/>
+</xs:schema>

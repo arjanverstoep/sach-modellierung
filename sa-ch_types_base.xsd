@@ -1,0 +1,69 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://astra.admin.ch/SA-CH/Types/Base/Types.xsd" xmlns:tns="http://astra.admin.ch/SA-CH/Types/Base/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="AccumStateStates">
+        <xs:annotation>
+            <xs:documentation>Signal -E_Sys_FC</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="Failure_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:AccumStateStates" name="AccumStateStates"/>
+    <xs:complexType name="ListOfAccumStateStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:AccumStateStates" name="AccumStateStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfAccumStateStates" name="ListOfAccumStateStates" nillable="true"/>
+    <xs:simpleType name="ComStateStates">
+        <xs:annotation>
+            <xs:documentation>Signal -E_Ch_F</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="Failure_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ComStateStates" name="ComStateStates"/>
+    <xs:complexType name="ListOfComStateStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ComStateStates" name="ComStateStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfComStateStates" name="ListOfComStateStates" nillable="true"/>
+    <xs:simpleType name="ControlModeStates">
+        <xs:annotation>
+            <xs:documentation>Signal -E_ctr_Typ</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Remote_0"/>
+            <xs:enumeration value="Local_1"/>
+            <xs:enumeration value="Maintenance_2"/>
+            <xs:enumeration value="Test_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ControlModeStates" name="ControlModeStates"/>
+    <xs:complexType name="ListOfControlModeStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ControlModeStates" name="ControlModeStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfControlModeStates" name="ListOfControlModeStates" nillable="true"/>
+    <xs:simpleType name="SysStateStates">
+        <xs:annotation>
+            <xs:documentation>Signal -E_Sys_F</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="Failure_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:SysStateStates" name="SysStateStates"/>
+    <xs:complexType name="ListOfSysStateStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SysStateStates" name="SysStateStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSysStateStates" name="ListOfSysStateStates" nillable="true"/>
+</xs:schema>
