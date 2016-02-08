@@ -1,0 +1,73 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://astra.admin.ch/SA-CH/Types/NT/Types.xsd" xmlns:tns="http://astra.admin.ch/SA-CH/Types/NT/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="CallTargetStates">
+        <xs:annotation>
+            <xs:documentation>Signal -I_Set_Target</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Target1_0"/>
+            <xs:enumeration value="Target2_1"/>
+            <xs:enumeration value="Target3_2"/>
+            <xs:enumeration value="Target4_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CallTargetStates" name="CallTargetStates"/>
+    <xs:complexType name="ListOfCallTargetStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CallTargetStates" name="CallTargetStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCallTargetStates" name="ListOfCallTargetStates" nillable="true"/>
+    <xs:simpleType name="FireExtinguisherPresentStates">
+        <xs:annotation>
+            <xs:documentation>Signal -I_FE_Present</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="Removed_1"/>
+            <xs:enumeration value="NotSupplied_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FireExtinguisherPresentStates" name="FireExtinguisherPresentStates"/>
+    <xs:complexType name="ListOfFireExtinguisherPresentStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FireExtinguisherPresentStates" name="FireExtinguisherPresentStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFireExtinguisherPresentStates" name="ListOfFireExtinguisherPresentStates" nillable="true"/>
+    <xs:simpleType name="FireExtinguisherRevisionStates">
+        <xs:annotation>
+            <xs:documentation>Signal -I_Revision_FE</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal_0"/>
+            <xs:enumeration value="Revision_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:FireExtinguisherRevisionStates" name="FireExtinguisherRevisionStates"/>
+    <xs:complexType name="ListOfFireExtinguisherRevisionStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FireExtinguisherRevisionStates" name="FireExtinguisherRevisionStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFireExtinguisherRevisionStates" name="ListOfFireExtinguisherRevisionStates" nillable="true"/>
+    <xs:simpleType name="InCallStates">
+        <xs:annotation>
+            <xs:documentation>Signal -I_Start_Call</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Idle_0"/>
+            <xs:enumeration value="Connected_1"/>
+            <xs:enumeration value="OnHold_2"/>
+            <xs:enumeration value="Reroute_3"/>
+            <xs:enumeration value="Ringing_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:InCallStates" name="InCallStates"/>
+    <xs:complexType name="ListOfInCallStates">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:InCallStates" name="InCallStates" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfInCallStates" name="ListOfInCallStates" nillable="true"/>
+</xs:schema>

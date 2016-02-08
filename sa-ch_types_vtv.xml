@@ -1,4 +1,4 @@
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="http://astra.admin.ch/SA-CH/Types/VTV" xmlns:s2="http://astra.admin.ch/SA-CH/Types/Base" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="http://astra.admin.ch/SA-CH/Types/VTV/Types.xsd" xmlns:s2="http://astra.admin.ch/SA-CH/Types/Base/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <NamespaceUris>
         <Uri>http://astra.admin.ch/SA-CH/Types/VTV</Uri>
         <Uri>http://astra.admin.ch/SA-CH/Types/Base</Uri>
@@ -18,7 +18,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="VGyGN7ziH0tFljIwvThkBw==" Version="1.3.4"/>
+            <ModelInfo Tool="UaModeler" Hash="fdLu0Ahe5b514kzHahqZGg==" Version="1.4.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3002" BrowseName="1:CameraTypeStates">
