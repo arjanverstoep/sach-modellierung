@@ -1,3 +1,17 @@
+* [08-02-2016] AR:
+  * Removed ControllerType/Status/AccumState
+  * Removed ControllerType/Status/AccumControlledBy
+  * Removed ControllerType/Status/InEventMode
+  * Removed ControllerType/Status/OperationMode
+  * Removed AsNtType/Alarms/EmergencyCallAlarm
+  * Removed AsNtType/Alarms/FireExtinguisherRemovalAlarm
+  * Removed TelelphoneSystemType/Configuration/TechnologicalType
+  * Removed TelelphoneSystemType/Parameters/PhoneId
+  * Removed TelelphoneSystemType/Status/InCall
+  * Removed OperationMode::DataItemType
+  * New ObjectType CollectiveDistrubance
+  * Generic Enum-Values of CallTargetType::DataItemType
+  
 * [26-05-2015] AR: 
   * Removed value "Unknown" from AccumStateStates 
   * Fixed a problem referencing NE object types in NT

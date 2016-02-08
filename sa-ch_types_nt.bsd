@@ -2,23 +2,23 @@
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
     <opc:EnumeratedType LengthInBits="32" Name="CallTargetStates">
         <opc:Documentation>Signal -I_Set_Target</opc:Documentation>
-        <opc:EnumeratedValue Name="Chur" Value="0"/>
-        <opc:EnumeratedValue Name="Camorino" Value="1"/>
-        <opc:EnumeratedValue Name="Reserved1" Value="2"/>
-        <opc:EnumeratedValue Name="Reserved2" Value="3"/>
+        <opc:EnumeratedValue Name="Target1" Value="0"/>
+        <opc:EnumeratedValue Name="Target2" Value="1"/>
+        <opc:EnumeratedValue Name="Target3" Value="2"/>
+        <opc:EnumeratedValue Name="Target4" Value="3"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="FireExtinguisherPresent">
+    <opc:EnumeratedType LengthInBits="32" Name="FireExtinguisherPresentStates">
         <opc:Documentation>Signal -I_FE_Present</opc:Documentation>
         <opc:EnumeratedValue Name="Normal" Value="0"/>
         <opc:EnumeratedValue Name="Removed" Value="1"/>
         <opc:EnumeratedValue Name="NotSupplied" Value="2"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="FireExtinguisherRevision">
+    <opc:EnumeratedType LengthInBits="32" Name="FireExtinguisherRevisionStates">
         <opc:Documentation>Signal -I_Revision_FE</opc:Documentation>
         <opc:EnumeratedValue Name="Normal" Value="0"/>
         <opc:EnumeratedValue Name="Revision" Value="1"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="InCall">
+    <opc:EnumeratedType LengthInBits="32" Name="InCallStates">
         <opc:Documentation>Signal -I_Start_Call</opc:Documentation>
         <opc:EnumeratedValue Name="Idle" Value="0"/>
         <opc:EnumeratedValue Name="Connected" Value="1"/>
