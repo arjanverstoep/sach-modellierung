@@ -4,6 +4,7 @@
     </NamespaceUris>
     <Aliases>
         <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="UInt16">i=5</Alias>
         <Alias Alias="String">i=12</Alias>
         <Alias Alias="LocalizedText">i=21</Alias>
         <Alias Alias="HasModellingRule">i=37</Alias>
@@ -19,7 +20,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="JxvWEWvg36hO5pBCJ/8g1g==" Version="1.4.1"/>
+            <ModelInfo Tool="UaModeler" Hash="PBmU66v32T2RXroBHMIvtQ==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3005" BrowseName="1:AccumStateStates">
@@ -188,6 +189,15 @@
         </References>
         <Value>
             <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariableType>
+    <UAVariableType DataType="UInt16" NodeId="ns=1;i=2006" BrowseName="1:ServerHeartbeatCounterType">
+        <DisplayName>ServerHeartbeatCounterType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=2365</Reference>
+        </References>
+        <Value>
+            <uax:UInt16>0</uax:UInt16>
         </Value>
     </UAVariableType>
     <UAVariableType DataType="SysStateStates" NodeId="ns=1;i=2007" BrowseName="1:SysStateType">
@@ -458,7 +468,7 @@
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=2003</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
         <Value>
             <uax:Int32>0</uax:Int32>
@@ -468,28 +478,30 @@
         <DisplayName>ExtendedControllerType</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=5022</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5026</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5018</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5027</Reference>
         </References>
     </UAObjectType>
     <UAObject ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=5022" BrowseName="1:CollectiveDistrubances">
         <DisplayName>CollectiveDistrubances</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=5023</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
     </UAObject>
     <UAObject SymbolicName="CollectiveDistrubance" ParentNodeId="ns=1;i=5022" NodeId="ns=1;i=5023" BrowseName="1:&lt;CollectiveDistrubance>">
         <DisplayName>&lt;CollectiveDistrubance></DisplayName>
         <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5022</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6019</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1013</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5022</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
         </References>
     </UAObject>
@@ -515,6 +527,55 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
+    <UAObject ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=5026" BrowseName="1:Commands">
+        <DisplayName>Commands</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7003</Reference>
+        </References>
+    </UAObject>
+    <UAMethod ParentNodeId="ns=1;i=5026" NodeId="ns=1;i=7003" BrowseName="1:SendClientHeartbeat">
+        <DisplayName>SendClientHeartbeat</DisplayName>
+        <Description Locale="EN">SA-CH clients may send heartbeats to this server</Description>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5026</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="Argument" ParentNodeId="ns=1;i=7003" ValueRank="1" NodeId="ns=1;i=6025" ArrayDimensions="1" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7003</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ClientId</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions></uax:ArrayDimensions>
+                            <uax:Description>
+                                <uax:Locale>EN</uax:Locale>
+                                <uax:Text>ID identifying a specific client as the origin of this heartbeat</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
     <UAObject ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=5011" BrowseName="1:ReflexSources">
         <DisplayName>ReflexSources</DisplayName>
         <References>
@@ -527,11 +588,11 @@
     <UAObject SymbolicName="ReflexSource" ParentNodeId="ns=1;i=5011" NodeId="ns=1;i=5024" BrowseName="1:&lt;ReflexSource>">
         <DisplayName>&lt;ReflexSource></DisplayName>
         <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6022</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6031</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1009</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5011</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5024" NodeId="ns=1;i=6022" BrowseName="1:IsActive">
@@ -568,13 +629,13 @@
     <UAObject SymbolicName="ReflexTarget" ParentNodeId="ns=1;i=5018" NodeId="ns=1;i=5025" BrowseName="1:&lt;ReflexTarget>">
         <DisplayName>&lt;ReflexTarget></DisplayName>
         <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5018</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6032</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6034</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6033</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6035</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1010</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5018</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5025" NodeId="ns=1;i=6032" BrowseName="1:IsAcknowledged">
@@ -629,6 +690,23 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
         </References>
     </UAObject>
+    <UAObject ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=5027" BrowseName="1:Status">
+        <DisplayName>Status</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6036</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=5027" NodeId="ns=1;i=6036" BrowseName="1:ServerHeartbeatCounter">
+        <DisplayName>ServerHeartbeatCounter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5027</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2006</Reference>
+        </References>
+    </UAVariable>
     <UAObjectType IsAbstract="true" NodeId="ns=1;i=1008" BrowseName="1:CompleteControllerType">
         <DisplayName>CompleteControllerType</DisplayName>
         <References>

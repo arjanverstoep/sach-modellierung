@@ -1,11 +1,11 @@
 ###########################
 # UaModeler Project File  #
-# Generated at 04.02.2016 #
+# Generated at 11.06.2016 #
 ###########################
 
 PROJECTNAME = SA-CH Types
 
-TEMPLATESET = ($TEMPLATES)/cpp/v1_4/t0/cpp_server.tt2set
+TEMPLATESET = ($TEMPLATES)/modeling/v1_0/t0/modeling.tt2set
 
 MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
     sa-ch_types_base.ua \
@@ -13,12 +13,6 @@ MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
     sa-ch_types_nt.ua \
     sa-ch_types_s.ua \
     sa-ch_types_vtv.ua
-
-VARIABLES+= sa-ch_types_base.ua: DllExportPrefix=SA-CH_TYPES_BASE; NamespaceName=SaChTypesBase; NamespacePrefix=SaChTypesBase; \
-    sa-ch_types_ne.ua: DllExportPrefix=SA-CH_TYPES_NE; NamespaceName=SaChTypesNe; NamespacePrefix=SaChTypesNe; \
-    sa-ch_types_nt.ua: DllExportPrefix=SA-CH_TYPES_NT; NamespaceName=SaChTypesNt; NamespacePrefix=SaChTypesNt; \
-    sa-ch_types_s.ua: DllExportPrefix=SA-CH_TYPES_S; NamespaceName=SaChTypesS; NamespacePrefix=SaChTypesS; \
-    sa-ch_types_vtv.ua: DllExportPrefix=SA-CH_TYPES_VTV; NamespaceName=SaChTypesVtv; NamespacePrefix=SaChTypesVtv; 
 
 COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
     sa-ch_types_base.ua: #800080\
@@ -29,5 +23,4 @@ COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
 
 OUTPUTPATH = 
 
-GENERATE += sa-ch_types_nt.ua
 

@@ -23,7 +23,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="zG9ruV7s5WVuEmV60cWLjw==" Version="1.4.1"/>
+            <ModelInfo Tool="UaModeler" Hash="/N9YtVSa6GaMRhX63BbGTw==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:CallTargetStates">
@@ -917,6 +917,7 @@
         <DisplayName>Status</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6065</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6048</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5044</Reference>
@@ -927,7 +928,19 @@
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5045</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="S_E_ctr_Typ" DataType="ControlModeStates" ParentNodeId="ns=1;i=5043" NodeId="ns=1;i=6048" BrowseName="2:-E_ctr_Typ">
+        <DisplayName>ControlMode</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5043</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5045</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
         <Value>
             <uax:Int32>0</uax:Int32>
@@ -955,7 +968,7 @@
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5024</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
         <Value>
             <uax:Int32>0</uax:Int32>
@@ -1533,17 +1546,6 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5042</Reference>
         </References>
     </UAObject>
-    <UAVariable SymbolicName="S_E_ctr_Typ" DataType="ControlModeStates" ParentNodeId="ns=1;i=5043" NodeId="ns=1;i=6048" BrowseName="2:-E_ctr_Typ">
-        <DisplayName>ControlMode</DisplayName>
-        <References>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5043</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-        </References>
-        <Value>
-            <uax:Int32>0</uax:Int32>
-        </Value>
-    </UAVariable>
     <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:EmergencyTelephoneType">
         <DisplayName>EmergencyTelephoneType</DisplayName>
         <References>

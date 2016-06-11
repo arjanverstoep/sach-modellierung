@@ -15,7 +15,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="Df8npWqkh7F6PaCZ2wsJVg==" Version="1.4.1"/>
+            <ModelInfo Tool="UaModeler" Hash="PNlcFaQNmt1WfZ+A0ccVLw==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:IoDevType">

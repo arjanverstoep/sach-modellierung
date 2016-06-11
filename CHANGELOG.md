@@ -1,3 +1,7 @@
+* [11-06-2016] AR:
+  * Added ExtendedControllerType/Commands/SendClientHeartbeat
+  * Added ExtendedControllerType/Status/ServerHeartbeatCounter
+  * Added VariableTypes/BaseDataVariableTypes/DataItemType/ServerHeartbeatCounterType
 * [08-02-2016] AR:
   * Removed ControllerType/Status/AccumState
   * Removed ControllerType/Status/AccumControlledBy
