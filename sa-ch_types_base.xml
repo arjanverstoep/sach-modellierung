@@ -20,7 +20,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="PBmU66v32T2RXroBHMIvtQ==" Version="1.4.3"/>
+            <ModelInfo Tool="UaModeler" Hash="TYsOEjw3aZoLGTD5PK6fSA==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3005" BrowseName="1:AccumStateStates">
@@ -538,7 +538,7 @@
     </UAObject>
     <UAMethod ParentNodeId="ns=1;i=5026" NodeId="ns=1;i=7003" BrowseName="1:SendClientHeartbeat">
         <DisplayName>SendClientHeartbeat</DisplayName>
-        <Description Locale="EN">SA-CH clients may send heartbeats to this server</Description>
+        <Description Locale="en">SA-CH clients may send heartbeats to this server</Description>
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6025</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -567,7 +567,7 @@
                             <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions></uax:ArrayDimensions>
                             <uax:Description>
-                                <uax:Locale>EN</uax:Locale>
+                                <uax:Locale>en</uax:Locale>
                                 <uax:Text>ID identifying a specific client as the origin of this heartbeat</uax:Text>
                             </uax:Description>
                         </uax:Argument>
